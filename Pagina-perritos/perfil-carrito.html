@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación Patita Feliz</title>
+    <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="icon"  type="image/png" href="../Pagina-perritos/img/paw1.png">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <script>  document.addEventListener('DOMContentLoaded', function() {
+       var elems = document.querySelectorAll('.sidenav');
+       var instances = M.Sidenav.init(elems);
+     });
+     </script>
+     
+</head>
+<body>
+
+  <nav class="nav-wrapper color-header" style="height:auto;" >
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger" style=" margin-left: 20px; margin-top: 50px;"><i class="material-icons">menu</i></a>
+     
+      
+
+      <a href="index.html"><img src="img/titulo-logo.png" class="logo"></a>      
+      
+      <ul id="nav-mobile" class="right hide-on-med-and-down" style=" margin-top:50px; margin-right: 30px;">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="producto.html">Productos</a></li>
+        <li><a href="sub.html">Suscríbete</a></li>
+        <li class="active"><a href="perfil.html">Mi perfil</a></li>
+      </ul>
+
+    </nav>
+    
+    <ul class="sidenav" id="mobile-demo">
+      <li class="active"><a href="index.html">Inicio</a></li>
+      <li><a href="producto.html">Productos</a></li>
+      <li><a href="sub.html">Suscríbete</a></li>
+      <li class="active"><a href="perfil.html">Mi perfil</a></li>
+    </ul>  
+<!----wrap----->
+<div id="wrap">
+<div class="row" style="margin-top: 30px;">
+  <div id="contenedor-menup">
+  <div class="col s12"> 
+      <div class="foto-perfil">
+          <img src="../Pagina-perritos/img/dog.png">
+          
+      </div>
+      <div class="menu-perfil">
+      <h4>Mi Perfil</h4>
+      <hr>
+<div class="link">
+    <div class="text"><a href="perfil.html"> Mis pedidos</a></div>
+</div>
+<hr>
+<div class="link">
+    <div class="text"><a href="perfil-carrito.html"> Carrito de compra</a></div>
+</div>
+<hr>
+<div class="link">
+    <div class="text"><a href="direccion.html"> Mis direciones</a></div>
+</div>
+<hr>
+<div class="link">
+    <div class="text"><a href="metodo-pago.html">Métodos de pagos</a></div>
+</div>
+<hr>
+<div class="centrar">
+  <a href="iniciar-sesion.html" class="waves-effect red darken-4 btn-small">Cerrar Sesión</a>
+  </div>
+    </div><!---div menu perfil-->  
+  
+  </div><!---cierre columna central-->
+</div>
+<div  class="col l9 s12" id="pedido">   
+  <section >
+    <h4>Carrito de compra</h4>
+          <ul id="pedido-producto">
+              <li>
+                <img src="../Pagina-perritos/img/collar1.jpg">
+              </li>
+              <li>
+                <h5>Collar floreado perro</h5>
+                <p> ID:89515185154</p>
+                <hr>                            
+                <p>Precio Suscriptor </p><span>$6.650</span>                 
+                <p>Cantidad: <input type="number"></p>
+             
+                <hr>
+                <a href="#" class="waves-effect color-btn btn-small">Pagar</a>
+              </li>
+              
+          </ul>
+      </section>
+    </div>
+   
+
+
+
+  </div> <!----Cierra el primer row---->
+  
+
+        <footer class="page-footer color-footer"  >
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <div id="redes" class="redes">
+                  <h5 class="white-text">Siguenos en nuestras redes sociales</h5>
+                  <img src="../Pagina-perritos/img/instagram1.png">
+                  <img src="../Pagina-perritos/img/facebook1.png">
+                  <img src="../Pagina-perritos/img/twitter1.png">
+                </div>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Quienes Somos</h5>
+                  <p>Somos una fundación sin fines de lucro que decidio lanzar su tieneda de 
+                    accesorios para mascotas y asi poder frenar el abandono de mascotas a través 
+                    de la educación de tenencia responsable, el rescate, rehabilitación y adopción de perros y 
+                    gatos</p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              
+              <div class="container">
+                  
+              <p class="center">© Todos los derechos Fundación Patita Feliz</p>
+              
+              </div>
+              
+            </div>
+          </footer>             
+        </div><!-------wrap-->
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       
+    <!----Script del menu del perfil---->
+    <script>
+        var links = document.getElementsByClassName('link')
+        for(var i = 0; i <= links.length; i++)
+           addClass(i)
+        
+        
+        function addClass(id){
+           setTimeout(function(){
+              if(id > 0) links[id-1].classList.remove('hover')
+              links[id].classList.add('hover')
+           }, id*750) 
+        }</script>
+
+
+</body>
+</html>
