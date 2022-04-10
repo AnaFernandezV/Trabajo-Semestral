@@ -10,24 +10,39 @@
       
      <link rel="stylesheet" href="css/style.css">
      <link rel="icon"  type="image/png" href="../Pagina-perritos/img/paw1.png">
-     
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <script>  document.addEventListener('DOMContentLoaded', function() {
+       var elems = document.querySelectorAll('.sidenav');
+       var instances = M.Sidenav.init(elems);
+     });
+     </script>
      
 </head>
 <body>
 
-        <nav >
-          
-            <div class="nav-wrapper teal lighten-2" style="height:150px;">
-              
-              <img src="img/titulo-logo.png" class="logo">              
-              <ul id="nav-mobile" class="right" style=" margin-top:50px; margin-right: 30px;">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="producto.html">Productos</a></li>
-                <li><a href="sub.html">Suscríbete</a></li>
-                <li  class="active"><a href="perfil.html">Mi Perfil</a></li>
-              </ul>
-            </div>
-          </nav>     
+  <nav class="nav-wrapper color-header" style="height:auto;" >
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger" style=" margin-left: 20px; margin-top: 50px;"><i class="material-icons">menu</i></a>
+     
+      
+
+      <a href="index.html"><img src="img/titulo-logo.png" class="logo"></a>      
+      
+      <ul id="nav-mobile" class="right hide-on-med-and-down" style=" margin-top:50px; margin-right: 30px;">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="producto.html">Productos</a></li>
+        <li><a href="sub.html">Suscríbete</a></li>
+        <li class="active"><a href="perfil.html">Mi perfil</a></li>
+      </ul>
+
+    </nav>
+    
+    <ul class="sidenav" id="mobile-demo">
+      <li class="active"><a href="index.html">Inicio</a></li>
+      <li><a href="producto.html">Productos</a></li>
+      <li><a href="sub.html">Suscríbete</a></li>
+      <li class="active"><a href="perfil.html">Mi perfil</a></li>
+    </ul>
 <!----wrap----->
 <div id="wrap">
 <div class="row" style="margin-top: 100px;">
@@ -56,6 +71,9 @@
     <div class="text"><a href="metodo-pago.html">Métodos de pagos</a></div>
 </div>
 <hr>
+<div class="centrar">
+  <a href="iniciar-sesion.html" class="waves-effect red darken-4 btn-small">Cerrar Sesión</a>
+  </div>
     </div><!---div menu perfil-->  
   
   </div><!---cierre columna central-->
@@ -70,7 +88,7 @@
   </div> <!----Cierra el primer row---->
   
 
-        <footer class="page-footer teal darken-1"  >
+        <footer class="page-footer color-footer">
             <div class="container">
               <div class="row">
                 <div class="col l6 s12">
@@ -82,11 +100,11 @@
                 </div>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                  <h5 class="white-text">Quienes Somos</h5>
-                  <p>Somos una fundación sin fines de lucro que decidio lanzar su tieneda de 
-                    accesorios para mascotas y asi poder frenar el abandono de mascotas a través 
+                  <h5 class="white-text">Quiénes Somos</h5>
+                  <p>Somos una fundación sin fines de lucro que decidió lanzar su tienda de 
+                    accesorios para mascotas y así poder frenar el abandono de mascotas a través 
                     de la educación de tenencia responsable, el rescate, rehabilitación y adopción de perros y 
-                    gatos</p>
+                    gatos.</p>
                 </div>
               </div>
             </div>

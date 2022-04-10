@@ -12,75 +12,66 @@
      <link rel="icon"  type="image/png" href="img/paw1.png">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-     <script>  document.addEventListener('DOMContentLoaded', function() {
-       var elems = document.querySelectorAll('.sidenav');
-       var instances = M.Sidenav.init(elems);
-     });
-     </script>
-
-     
+<script>  document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems);
+});
+</script>
 </head>
 <body>
+  <!----wrap----->
+  <div id="wrap">
+    <nav class="nav-wrapper color-header" style="height:auto;" >
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger" style=" margin-left: 20px; margin-top: 50px;"><i class="material-icons">menu</i></a>
+       
+        
 
-  <nav class="nav-wrapper color-header" style="height:auto;" >
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger" style=" margin-left: 20px; margin-top: 50px;"><i class="material-icons">menu</i></a>
-     
+        <a href="index.html"><img src="img/titulo-logo.png" class="logo"></a>      
+        
+        <ul id="nav-mobile" class="right hide-on-med-and-down" style=" margin-top:50px; margin-right: 30px;">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="active"><a href="producto.html">Productos</a></li>
+          <li><a href="sub.html">Suscríbete</a></li>
+          <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
+        </ul>
+ 
+      </nav>
       
-
-      <a href="index.html"><img src="img/titulo-logo.png" class="logo"></a>      
-      
-      <ul id="nav-mobile" class="right hide-on-med-and-down" style=" margin-top:50px; margin-right: 30px;">
-        <li class="active"><a href="index.html">Inicio</a></li>
-        <li><a href="producto.html">Productos</a></li>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="active"><a href="producto.html">Productos</a></li>
         <li><a href="sub.html">Suscríbete</a></li>
         <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
       </ul>
 
-    </nav>
-    
-    <ul class="sidenav" id="mobile-demo">
-      <li class="active"><a href="index.html">Inicio</a></li>
-      <li><a href="producto.html">Productos</a></li>
-      <li><a href="sub.html">Suscríbete</a></li>
-      <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
-    </ul>
-<!----wrap----->
-<div id="wrap">
-<div id="slider"> 
-
-</div><!----cierre slider-->
-
-
-<div class="row "><!----la presentacion-->
-  <div class="col s2"></div>
-  <div class="col s8 ">
-    <section >
+  <div class="container">    
+    <div class="detalle-producto">
       
-      <ul class="iconos-contenido">
-          <li>
-            <a href="sub.html"><img src="img/pet-house.png"></a>
-              <h4>Subscribete</h4>
-              <p>Obten descuentos en tú compra</p>
-          </li>
-          <li>
-            <a href="producto.html"><img src="img/clothes-donation.png"></a>
-              <h4>Compra</h4>
-              <p>Accesorios para tu peludo</p>
-          </li>
-          <li>
-            <a href="https://www.paypal.com/cl/home"><img src="img/charity.png"></a>
-              <h4>Dona</h4>
-              <p>Ayuda a nuestros peludos</p>
-          </li>
-      </ul>
-  </section>         
-    
-</div><!-----cierre col 8-->
+    <section >
+      <h4>Detalle Producto</h4>
+            <ul id="detalle-producto">
+                <li>
+                  <img src="img/collar1.jpg">
+                </li>
+                <li>
+                  <h5>Collar floreado perro</h5>
+                  <p> ID: 89515185154</p>
+                  <hr>
+                  
+                  <p>Precio Normal </p><s>$7.000</s>
+                  <p>Precio Suscriptor </p><span>$6.650</span>
+                  <p>Cantidad : <input type="number"></p>
+                  <p>En Stock: 5</p>
+                  <hr>
+                  <a href="iniciar-sesion.html" class="detalle-btn color-btn btn-small">Agregar al carrito</a>
+                </li>
+                
+            </ul>
+        </section>
+      </div>
 
-<div class="col s2"></div>
 
-</div><!---cierre -la presentacion-->
-
+</div><!---cierre container-->
         <footer class="page-footer color-footer"  >
             <div class="container">
               <div class="row">
@@ -114,6 +105,5 @@
         </div><!-------wrap-->
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 </body>
 </html>
